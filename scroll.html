@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music website</title>
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--custom css file link-->
+    <link rel="stylesheet" href="scrolol.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+
+</head>
+<body>
+    <header class="header">
+        <a class="navbar-brand" href="/"> 
+            <div class="logo-image"> 
+              <img src="images/logo.png" class="img-fluid"> 
+            </div> 
+          </a> 
+        <nav class="navbar">
+            <a href="#home"><b>Home</b></a>
+            <a href="#artists"><b>Artists</b></a>
+            <a href="#library"><b>Library</b></a>
+            <a href="#about-us"><b>About us</b></a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-music" id="music-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email or phone" placeholder="your email or phone" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create-now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+     
+    <section class="home" id="home">
+        <div class="content">
+            <p>The true beauty of music is that its connects people</p>
+        </div>
+ 
+    </section>
+    <section class="artists" id="artists">
+        <h1 class="heading">Artists</h1>
+    <div class="slideshow-container">
+        <div class="slider">
+            <div class="mySlides">
+                <img src="images/Geetha-Madhuri.jpg" alt="geetha">
+            </div>
+            <div class="mySlides">
+                <img src="images/Prudhvi-Chandra.JPEG" alt="prudhvi">
+            </div>
+            <div class="mySlides">
+                <img src="images/S.-P.-Balasubrahmanyam.JPEG" alt="bala">
+            </div>
+            <div class="mySlides">
+                <img src="images/bhargavi1.jpeg" alt="bhargavi">
+            </div>
+        </div>
+    </div>   
+    </section>
+
+    <section class="library" id="library">
+        <h1 class="heading">Library</h1>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <h2>Telugu</h2>
+                </div>
+                <div class="carousel-slide">
+                    <h2>Hindhi</h2>
+                </div>
+                <div class="carousel-slide">
+                    <h3>Tamil</h3>
+                </div>
+            </div>
+            <button id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+            <button id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+        <h1 class="heading">About us</h1>
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-music"></i>Rhythm</h3>
+                <p>Get Social With Us.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/neha_gutpe_?igsh=MXV1NTNpOG9jc29ueQ==" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/gutpe-nehareddy-54b507235" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+   
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="tel:6281195484" class="links"><i class="fas fa-phone"></i>6281195484</a>
+                <a href="tel:9989670013" class="links"><i class="fas fa-phone"></i>9989670013</a>
+                <a href="mailto:gutpenehareddy@gmail.com" class="links"><i class="fas fa-envelope"></i>gutpenehareddy@gmail.com</a>
+                <a href="mailto:poojithaambatla1gmail.com" class="links"><i class="fas fa-envelope"></i>poojithaambatla1@gmail.com</a>
+                <a href="https://www.google.com/search?q=my+current+location&rlz=1C1UEAD_enIN1018IN1018&oq=my+curr&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMgYIARBFGDkyBwgCEAAYgAQyDQgDEAAYgwEYsQMYgAQyBwgEEAAYgAQyCggFEAAYsQMYgAQyDAgGEAAYFBiHAhiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABKgCCLACAQ&sourceid=chrome&ie=UTF-8" class="links"><i class="fas fa-map-marker-alt"></i>Nizamabad, Telangana</a>
+            </div>
+   
+            <div class="box">
+                <h3>content info</h3>
+                <a href="#home" class="links"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#artists" class="links"><i class="fas fa-arrow-right"></i>Artists</a>
+                <a href="#library" class="links"><i class="fas fa-arrow-right"></i>Library</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="scroll.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

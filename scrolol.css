@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --pink:#D5B0C2;
+    --navy:#000080;
+    --black:#130f40;
+    --light-color:#666;
+    --border:1rem solid rgba(0,0,0,.1);
+    --outline:1rem solid rgba(0,0,0,.1);
+    --outline-hover:1rem solid var(--pink);
+
+}
+
+*{
+    font-family:'Poppins',sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline:none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+} 
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: black;
+}
+
+.header{
+    position:fixed;
+    top:0;left:0;right:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:2rem 9%;
+    background:#D5B0C2;
+    
+}
+
+.header img{
+    height: 6rem;
+    width: 13rem;
+    border-radius: .5rem;    
+}
+.header .navbar a{
+    font-size:2rem;
+    margin:1rem;
+    color:black;
+}
+
+.header .navbar a:hover{
+    color:navy;
+}
+
+.header .icons div{
+    height:4.5rem;
+    width:4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: black;
+    font-size: 2rem;
+    margin-right: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    background:navy;
+    color: #fff;
+}
+
+#menu-btn{
+    display:none;
+}
+
+.header .search-form{
+    position:absolute;
+    top: 110%; right:-110%;
+    width:50rem;
+    height:5rem;
+    background:#fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.header .search-form.active{
+    right:2rem;
+    transition: .1s linear;
+}
+
+.header .search-form input{
+    height: 100%;
+    width:100%;
+    background:none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color:black;
+    padding:1.5rem;
+}
+
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.header .login-form{
+    position: absolute;
+    top:110%; right:-110%;
+    width:30rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header .login-form.active{
+    right:2rem;
+    transition: .1s linear;
+}
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.header .login-form .box{
+    margin:.7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+}
+
+.header .login-form p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+}
+
+.header .login-form p a{
+    color:navy;
+    text-decoration: underline;
+
+}
+
+.home{
+    background: url(./images/music-banner-2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30rem;
+    padding-bottom: 30rem;
+}
+
+.home .content{
+    width:60rem;
+    margin-right: auto;
+
+}
+
+.home .content p{
+    color:white;
+    font-size: 4rem;
+        
+}
+
+.artists{
+    background-color: lavender;
+    text-align: center;
+}
+.slideshow-container {
+    max-width: 400px;
+    background-color: lavender;
+    margin: auto;
+    text-align: center;
+}
+
+.slider{
+    display: flex;
+}
+
+.mySlides {
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+}
+.mySlides img {
+    margin:1rem 0;
+    height:auto;
+}
+
+.library{
+    background-color: lavender;
+}
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .carousel {
+    display: flex;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #prevBtn {
+    left: 10px;
+  }
+  
+  #nextBtn {
+    right: 10px;
+  }
+  
+
+.about-us{
+    background:lavender;
+}
+
+.about-us .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.about-us .box-container .box h3{
+    font-size: 2.5rem;
+    color:black;
+    font-style: italic;
+}
+
+.about-us .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+} 
+
+.about-us .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.about-us .box-container .box .links i{
+    padding-right: .5rem;
+}
+
+.about-us .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+
+.about-us .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: black;
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.about-us .box-container .box .share a:hover{
+    color:pink;
+    background-color: navy;
+}
+
+
+
+/*media queries */
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding :2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+}
+
+@media (max-width:768px){
+    #menu-btn{
+        display:inline-block;
+    }
+    
+    .header .search-form{
+        width:90%;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:110%;right:-110%;
+        width:30rem;
+        border-radius: .5rem;
+        background: #fff;
+         
+    }
+    
+    .header .navbar.active{
+        right:2rem;
+        transition: .1s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;    
+    
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+}
+
